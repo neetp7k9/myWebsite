@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PersonalWebsite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <title>Scenery out of my window</title>
 </head>
 <body>
+  <div class="nav">
+    <div class ="container">
+      <ul>
+        <li>about me</li>
+        <li>category</li>
+      </ul>
+    </div>
+  </div>
+  <%= yield %>
+  <div class="foot">
+    <div class ="container">
+      <ul>
+        <li>somethings</li>
+        <li>somethings</li>
+      </ul>
+    </div>
+  </div>
 
-<%= yield %>
 
 </body>
 </html>

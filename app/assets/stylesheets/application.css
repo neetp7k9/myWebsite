@@ -14,7 +14,7 @@
  *= require_self
  */
 .nav {
-  color: #5a5a5a;
+  color: gray;
   font-size: 11px;
   font-weight: bold;
   padding-top: 14px;

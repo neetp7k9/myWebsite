@@ -13,19 +13,44 @@
  *= require_tree .
  *= require_self
  */
+body {
+    background-color: #e7dbed;
+}
+.bottom {    
+    background-color: #FFFFFF;
+    width: 900px;
+    margin: 0px auto;
+    padding: 5px 5px 5px 5px;
+}
 .nav {
-  color: gray;
-  font-size: 11px;
-  font-weight: bold;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 10px;
-  padding-right: 10px;
+    background-color: #c8c8c8;
+    width: 900px;
+    margin: 0px auto;
+    font-size: 11px;
+    font-weight: bold;
+    display: block
+}
+.nav .container{
 }
 .nav li{
-  display : inline;
-  font-size: 20px;
+    display : inline;
+    font-size: 20px;
 }
-.logo {
- background-image: url('<%= asset_path("title.png")%>');
+.header h1 {
+    font: normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
+    margin-left: 10%;
+}
+.header {
+    background-color: #cc7700;
+    width: 900px;
+    margin: 0px auto;
+    display: block
+}
+.descript p{
+    font: normal normal 20px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
+    margin-left: 10%;
 }

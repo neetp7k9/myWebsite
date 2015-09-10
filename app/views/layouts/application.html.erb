@@ -5,26 +5,37 @@
   <%= stylesheet_link_tag 'application'%> 
 </head>
 <body>
-  <div class="nav">
-    <div class ="container">
-      <ul>
-        <li> <a class="logo">logo</a></li>
-        <li></li>
-        <li>about me</li>
-        <li>category</li>
-      </ul>
+  <div class="bottom">
+    <div class="header">
+      <div class="title">
+        <h1>
+          Scenery out of my window
+        </h1>
+      </div>
+      <div class="descript">
+        <p>
+          Hi! This is my blog filled with my notion about the world.
+        </p>
+      </div>
+      <div class="nav">
+        <div class ="container">
+          <ul>
+            <li> <%= image_tag("title.png") %></li>
+            <li>about me</li>
+            <li>category</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <%= yield %>
+    <div class="foot">
+      <div class ="container">
+        <ul>
+          <li>somethings</li>
+          <li>somethings</li>
+        </ul>
+      </div>
     </div>
   </div>
-  <%= yield %>
-  <div class="foot">
-    <div class ="container">
-      <ul>
-        <li>somethings</li>
-        <li>somethings</li>
-      </ul>
-    </div>
-  </div>
-
-
 </body>
 </html>

@@ -1,0 +1,21 @@
+<h1>Listing articles</h1>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>text</th>
+    <th>Commet</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<% @articles.each do |article| %>
+  <tr>
+    <td><%= article.title %></td>
+    <td><%= article.text %></td>
+    <td><%= article.comment %></td>
+    <td><%= link_to 'Show', article %></td>
+    <td><%= link_to 'Destroy', article, method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= link_to 'New Article', new_article_path %>

@@ -3,4 +3,7 @@ class MainController < ApplicationController
     @action_name = action_name
         
   end
+  def profile
+
+  end
 end

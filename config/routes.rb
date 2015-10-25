@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
    root 'main#index'
    resources :articles
+   get 'main/profile' => 'main#profile'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
